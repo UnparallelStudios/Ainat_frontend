@@ -1,0 +1,26 @@
+.alert-card {
+  background-color: rgb(218, 93, 93);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 34px;
+
+  .icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    font-size: 55px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 32px;
+    font-family: sans-serif;
+  }
+}
