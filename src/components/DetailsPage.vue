@@ -1,11 +1,30 @@
-<script setup>
+<script>
 import "../assets/detailspage.scss";
 import Card from "./Card.vue";
 import PoolCard from "./PoolCard.vue";
+import { state } from "@/socket";
+
+export default {
+  name: "DetailsPage",
+  components: {
+    Card,
+    PoolCard,
+  },
+  computed: {
+    connected() {
+      return state.connected;
+    },
+
+    myResponseData() {
+      return state.myResponseData;
+    },
+  },
+};
 </script>
 
 <template>
   <div class="container">
+    <h1>{{ myResponseData }}</h1>
     <div class="back-menu">
       <div class="back-button">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
