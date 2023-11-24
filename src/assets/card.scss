@@ -1,0 +1,62 @@
+.card {
+  // width: 300px;
+  //   height: 400px;
+  border-radius: 16px;
+  background-color: rgb(182, 182, 227);
+  padding: 16px;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+  }
+
+  .title-section {
+    margin-left: 12px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo {
+    border-radius: 100px;
+    padding: 16px;
+    color: white;
+    background-color: black;
+  }
+}
+
+.inner-card {
+  height: 50%;
+  font-family: sans-serif;
+  background-color: #eafc5f;
+  background-image: url(../assets/images/wave-line.png);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-blend-mode: multiply;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.rightside {
+  flex: 1;
+
+  .value {
+    font-size: 32px;
+    position: relative;
+  }
+  span.unit {
+    position: absolute;
+    top: -1px;
+    left: 38px;
+    font-size: 14px;
+  }
+}
+
+.leftside {
+  flex: 1;
+}

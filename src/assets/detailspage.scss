@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: rgb(97, 128, 148);
+  background: linear-gradient(
+    184deg,
+    rgba(97, 128, 148, 1) 0%,
+    rgba(108, 136, 155, 1) 35%,
+    rgba(135, 157, 174, 1) 100%
+  );
+  padding: 16px;
+  font-family: sans-serif;
+
+  .back-menu {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    .back-button {
+    }
+  }
+
+  .details-page-header {
+    margin-top: 44px;
+    p {
+      font-size: 34px;
+      color: white;
+    }
+  }
+}
+
+.cards-container > div {
+  margin-top: 12px;
+}

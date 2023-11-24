@@ -1,0 +1,54 @@
+.top-pill {
+  //   height: 77px;
+  padding: 8px;
+  border-radius: 100px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.image-circle {
+  width: 77px;
+  height: 77px;
+  border-radius: 100px;
+  background-image: url(./pool.jpg);
+}
+
+.location-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+
+  .main-title {
+    font-size: 24px;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.status {
+  width: 77px;
+  height: 77px;
+  border-radius: 100px;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    display: block;
+  }
+}
