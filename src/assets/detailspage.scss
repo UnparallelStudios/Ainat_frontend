@@ -22,6 +22,16 @@
     color: white;
 
     .back-button {
+      padding: 10px;
+      background-color: #577087;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 32px;
+        fill: white;
+      }
     }
   }
 
