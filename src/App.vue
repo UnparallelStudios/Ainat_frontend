@@ -7,6 +7,4 @@ import LoginPage from "./components/LoginPage.vue";
 <template>
   <DashboardPage />
   <LoginPage />
-</script>
-
-<style scoped></style>
+</template>
