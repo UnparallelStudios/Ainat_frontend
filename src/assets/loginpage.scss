@@ -6,18 +6,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
+  background-image: url("/waterfall.png");
+  background-position: center;
 }
 
 .ainat-title {
-  font-size: 70px;
+  width: 100%;
+  font-size: 60px;
+  font-family: Akira;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
   height: 45vh;
-  width: 80vw;
-  background-color: lightblue;
-  border: 2px solid black;
+  width: 85vw;
+  // border: 2px solid black;
   border-radius: 20px;
 }
 
@@ -34,34 +41,37 @@
   input {
     height: 6vh;
     width: 80%;
-    border: 2px black solid;
-    border-radius: 16px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px black solid;
     font-size: 20px;
   }
 
   input[type="text" i] {
     writing-mode: horizontal-tb !important;
     padding-block: 1px;
-    padding-inline: 12px;
+    padding-inline: 8px;
+  }
+
+  input:focus {
+    outline: none;
   }
 
   input:active {
-    border: 2px gray solid;
+    outline: none;
   }
 
   button {
     height: 4vh;
-    width: 30%;
+    width: 80%;
     color: white;
     font-size: 16px;
     border: 2px black solid;
     border-radius: 12px;
-    background-color: blue;
-    box-shadow: 0 4px black;
+    background-color: rgb(35, 81, 159);
   }
 
   button:active {
-    box-shadow: 0 2px black;
-    transform: translatey(2px);
+    transform: translateY(2px);
   }
 }

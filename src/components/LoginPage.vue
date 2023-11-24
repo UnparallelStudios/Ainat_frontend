@@ -20,7 +20,10 @@ function formValidate() {
 
 <template>
   <div class="loginpage-container">
-    <div class="ainat-title">AINAT</div>
+    <div class="ainat-title">
+      Default <br />
+      Default
+    </div>
     <div class="login-container">
       <form class="login-form">
         <input
