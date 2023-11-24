@@ -1,11 +1,10 @@
 <script setup>
-import "./assets/app.css"
+import LoginPage from "./components/LoginPage.vue";
+import "./assets/app.scss";
 </script>
 
 <template>
- <div class="helloworld">HelloWorld!</div>
+  <LoginPage />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
