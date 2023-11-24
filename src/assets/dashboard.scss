@@ -31,7 +31,52 @@
 .main-pool-container {
   flex: auto;
   width: 90%;
-  background-color: azure;
+  background-color: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .vertical-abs-cams-top {
+    z-index: 10;
+    position: absolute;
+    top: 5px;
+  }
+
+  .vertical-abs-cams-bottom {
+    z-index: 10;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .horizontal-abs-cams-left {
+    z-index: 10;
+    position: absolute;
+    left: 16px;
+  }
+  .horizontal-abs-cams-right {
+    z-index: 10;
+    position: absolute;
+    right: 16px;
+  }
+
+  .pool-rectangle {
+    width: 80%;
+    height: 90%;
+    background-color: lightblue;
+    border: 8px solid #c1bfbf;
+
+    .grid-design {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      .grid-item {
+        border: 1px black solid;
+      }
+    }
+  }
 }
 
 .bottom-nav {
@@ -40,38 +85,38 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-
-  .toggle {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-
-  .toggle:checked {
-    background-color: purple;
-    animation: slideOn 0.3s linear forwards;
-  }
 }
 
-.ball-slider-container {
+.toggle {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.slider-container {
   height: 100%;
   width: 100%;
-  position: relative;
-  border-radius: 40px;
   background-color: black;
+  border-radius: 50px;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
 
-  .ball {
-    position: absolute;
-    left: 0;
-    top: 9%;
-    height: 6.5vh;
-    width: 6.5vh;
-    border-radius: 50px;
-    background-color: white;
-    margin-left: 4px;
-    animation: slideOff 0.3s linear forwards;
-  }
+.toggle:checked + .slider-container .ball {
+  animation: slideOn 0.4s linear forwards;
+}
+
+.ball {
+  background-color: white;
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  height: 6.5vh;
+  width: 6.5vh;
+  border-radius: 50vh;
+  //   transform: translateX(0);
+  animation: slideOff 0.4s linear forwards;
 }
 
 @keyframes slideOn {
@@ -79,13 +124,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(75px);
+    transform: translateX(7.6vh);
   }
 }
 
 @keyframes slideOff {
   0% {
-    transform: translateX(75px);
+    transform: translateX(7.6vh);
   }
   100% {
     transform: translateX(0);
