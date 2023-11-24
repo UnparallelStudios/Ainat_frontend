@@ -1,11 +1,10 @@
 <script setup>
-import "./assets/app.css"
+import "./assets/app.scss";
+import DashboardPage from "./components/DashboardPage.vue";
 </script>
 
 <template>
- <div class="helloworld">HelloWorld!</div>
+  <DashboardPage />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
