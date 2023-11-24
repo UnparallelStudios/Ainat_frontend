@@ -1,0 +1,77 @@
+.loginpage-container {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-image: url("/waterfall.png");
+  background-position: center;
+}
+
+.ainat-title {
+  width: 100%;
+  font-size: 60px;
+  font-family: Akira;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 45vh;
+  width: 85vw;
+  // border: 2px solid black;
+  border-radius: 20px;
+}
+
+.login-form {
+  padding-top: 8vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4vh;
+
+  input {
+    height: 6vh;
+    width: 80%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px black solid;
+    font-size: 20px;
+  }
+
+  input[type="text" i] {
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 8px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input:active {
+    outline: none;
+  }
+
+  button {
+    height: 4vh;
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    border: 2px black solid;
+    border-radius: 12px;
+    background-color: rgb(35, 81, 159);
+  }
+
+  button:active {
+    transform: translateY(2px);
+  }
+}
