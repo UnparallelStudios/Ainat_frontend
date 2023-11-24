@@ -1,10 +1,12 @@
 <script setup>
-import LoginPage from "./components/LoginPage.vue";
 import "./assets/app.scss";
+import DashboardPage from "./components/DashboardPage.vue";
+import LoginPage from "./components/LoginPage.vue";
 </script>
 
 <template>
+  <DashboardPage />
   <LoginPage />
-</template>
+</script>
 
 <style scoped></style>
