@@ -7,15 +7,25 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-image: url("/waterfall.png");
-  background-position: center;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.bg-color {
+  position: absolute;
+  rotate: 70deg;
+  top: -40%;
+  left: -50%;
+  z-index: -10;
+  height: 100vh;
+  width: 150vw;
+  background-color: rgb(89, 119, 210);
 }
 
 .ainat-title {
   width: 100%;
   font-size: 60px;
   font-family: Akira;
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +57,10 @@
     font-size: 20px;
   }
 
+  input::placeholder {
+    color: black;
+  }
+
   input[type="text" i] {
     writing-mode: horizontal-tb !important;
     padding-block: 1px;
@@ -65,10 +79,10 @@
     height: 4vh;
     width: 80%;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: 2px black solid;
     border-radius: 12px;
-    background-color: rgb(35, 81, 159);
+    background-color: rgb(35, 56, 159);
   }
 
   button:active {

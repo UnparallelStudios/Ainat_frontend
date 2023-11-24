@@ -2,11 +2,13 @@
 import "../assets/dashboard.scss";
 import HorizontalCams from "./HorizontalCams.vue";
 import VerticalCams from "./VerticalCams.vue";
+import TopPill from "../components/TopPill.vue";
 </script>
 
 <template>
   <div class="dashboard-container">
-    <div class="pool-title-container"></div>
+    <!-- <div class="pool-title-container"></div> -->
+    <TopPill />
     <div class="pool-warning"></div>
     <div class="main-pool-container">
       <div class="horizontal-abs-cams-left">

@@ -19,11 +19,9 @@ function formValidate() {
 </script>
 
 <template>
+  <div class="bg-color"></div>
   <div class="loginpage-container">
-    <div class="ainat-title">
-      Default <br />
-      Default
-    </div>
+    <div class="ainat-title">LOGIN</div>
     <div class="login-container">
       <form class="login-form">
         <input
@@ -38,7 +36,7 @@ function formValidate() {
           placeholder="Password"
           type="text"
         />
-        <button @click="formValidate" type="button">Login!</button>
+        <button @click="formValidate" type="button">Login</button>
       </form>
     </div>
   </div>
