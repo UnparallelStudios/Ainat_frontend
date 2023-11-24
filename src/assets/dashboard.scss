@@ -2,6 +2,9 @@
   height: 100vh;
   width: 100%;
   background-image: url("/waterfall.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -38,26 +41,22 @@
   justify-content: center;
 
   .vertical-abs-cams-top {
-    z-index: 10;
     position: absolute;
-    top: 5px;
+    top: 1.5vh;
   }
 
   .vertical-abs-cams-bottom {
-    z-index: 10;
     position: absolute;
-    bottom: 5px;
+    bottom: 1.5vh;
   }
 
   .horizontal-abs-cams-left {
-    z-index: 10;
     position: absolute;
-    left: 16px;
+    left: 6.5vw;
   }
   .horizontal-abs-cams-right {
-    z-index: 10;
     position: absolute;
-    right: 16px;
+    right: 6.5vw;
   }
 
   .pool-rectangle {
@@ -124,13 +123,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(7.6vh);
+    transform: translateX(7.9vh);
   }
 }
 
 @keyframes slideOff {
   0% {
-    transform: translateX(7.6vh);
+    transform: translateX(7.9vh);
   }
   100% {
     transform: translateX(0);

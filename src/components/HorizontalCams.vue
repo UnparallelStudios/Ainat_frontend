@@ -6,11 +6,15 @@ export default {
     alertColor: String,
     alertBorder: String,
   },
+  methods: {
+    buttonPress() {
+      console.log("works");
+    },
+  },
 };
 </script>
 
 <template>
-  <!-- <div class="container"> -->
   <div class="horizontal-cam-grid">
     <div class="grid-item"><button></button></div>
     <div class="grid-item"><button></button></div>
@@ -20,8 +24,9 @@ export default {
     <div class="grid-item">
       <button
         :style="{ backgroundColor: alertColor, borderColor: alertBorder }"
+        @click="buttonPress"
+        type="button"
       ></button>
     </div>
   </div>
-  <!-- </div> -->
 </template>
