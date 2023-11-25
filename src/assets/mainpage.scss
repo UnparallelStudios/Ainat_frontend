@@ -104,6 +104,21 @@
   font-size: 20px;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 40%;
+  top: -1%;
+  font-size: 24px;
+}
+
+.danger {
+  color: red;
+}
+
 .pool-a {
   .name-container {
     height: 17%;
@@ -136,12 +151,12 @@
       font-size: 22px;
     }
 
-    .grid-item-alert:after {
-      content: "Alert";
-      color: red;
-      font-weight: 700;
-      font-size: 22px;
-    }
+    // .grid-item-alert:after {
+    //   content: "Alert";
+    //   color: red;
+    //   font-weight: 700;
+    //   font-size: 22px;
+    // }
   }
 }
 
