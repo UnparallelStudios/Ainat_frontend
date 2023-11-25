@@ -1,15 +1,32 @@
-<script setup>
+<script>
 import "../assets/mainpage.scss";
+import { state } from "@/socket";
 
-function timeStamp() {
-  const today = new Date();
-  const time = today.getHours() + ":" + today.getMinutes();
-  return time;
-}
+export default {
+  name: "MainPage",
+  methods: {
+    timeStamp() {
+      const today = new Date();
+      const time = today.getHours() + ":" + today.getMinutes();
+      return time;
+    },
 
-function test() {
-  console.log("print");
-}
+    test() {
+      console.log("print");
+    },
+  },
+
+  computed: {
+    connected() {
+      console.log(state.connected);
+      return state.connected;
+    },
+
+    myResponseData() {
+      return state.myResponseData;
+    },
+  },
+};
 </script>
 
 <template>
@@ -23,7 +40,10 @@ function test() {
           <div class="pool-a-body">
             <div class="grid-item">Dimensions: 50mx25m</div>
             <div class="grid-item">Water Quality: Healthy</div>
-            <div class="grid-item-alert"></div>
+            <div class="grid-item-alert relative">
+              <div class="absolute" v-if="connected">Safe</div>
+              <div class="absolute danger" v-else>Danger</div>
+            </div>
           </div>
         </div>
         <div class="pool-a-percent">
