@@ -3,6 +3,24 @@ import "../assets/dashboard.scss";
 import HorizontalCams from "./HorizontalCams.vue";
 import VerticalCams from "./VerticalCams.vue";
 import TopPill from "../components/TopPill.vue";
+import { ref } from "vue";
+import { io } from "socket.io-client";
+
+const socket = io("http://localhost:5000");
+socket.connect();
+let perc = ref("");
+socket.on("perc", (data) => {
+  perc.value = data["data"];
+});
+
+function handleClick() {
+  socket.emit("getperc");
+}
+
+socket.onAny((event, args) => {
+  console.log(event);
+  console.log(args);
+});
 </script>
 
 <template>
@@ -38,5 +56,7 @@ import TopPill from "../components/TopPill.vue";
         <div class="ball"></div>
       </label>
     </div>
+    <div class="confidence-level">{{ perc }}</div>
+    <button @click="handleClick">Click</button>
   </div>
 </template>

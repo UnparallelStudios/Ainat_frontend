@@ -40,8 +40,8 @@ export default {
             <div class="grid-item">Dimensions: 50mx25m</div>
             <div class="grid-item">Water Quality: Healthy</div>
             <div class="grid-item-alert relative">
-              <div class="absolute" v-if="connected">Safe</div>
-              <div class="absolute danger" v-else>Danger</div>
+              <!-- <div class="absolute" v-if="connected">Safe</div> -->
+              <div class="absolute danger">Danger</div>
             </div>
           </div>
         </div>
