@@ -9,6 +9,7 @@
   gap: 30px;
   background-color: transparent;
   z-index: 1;
+  overflow: hidden;
 }
 
 .bg-color {
@@ -73,6 +74,13 @@
 
   input:active {
     outline: none;
+  }
+
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   button {

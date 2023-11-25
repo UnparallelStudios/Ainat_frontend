@@ -10,9 +10,8 @@ export default {
       const time = today.getHours() + ":" + today.getMinutes();
       return time;
     },
-
-    test() {
-      console.log("print");
+    onClickRedirect() {
+      this.$router.push("/dash");
     },
   },
 
@@ -34,7 +33,7 @@ export default {
     <div class="inner-container">
       <div class="main-navbar">{{ timeStamp() }}<a>Pool</a><a>FAQs</a></div>
       <div class="services"></div>
-      <div @click="test" class="pool-a-container">
+      <div class="pool-a-container" @click="onClickRedirect">
         <div class="pool-a">
           <div class="name-container">Pool A</div>
           <div class="pool-a-body">

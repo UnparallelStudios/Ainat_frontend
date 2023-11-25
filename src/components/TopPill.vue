@@ -4,7 +4,7 @@ import "../assets/toppill.scss";
 
 <template>
   <div class="top-pill">
-    <div class="image-circle"></div>
+    <div class="back-button"><router-link to="/">Back</router-link></div>
     <div class="location">
       Rajagiri <br />
       Kakkanad

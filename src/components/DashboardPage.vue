@@ -9,7 +9,7 @@ import TopPill from "../components/TopPill.vue";
   <div class="dashboard-container">
     <!-- <div class="pool-title-container"></div> -->
     <TopPill />
-    <div class="pool-warning"></div>
+    <div class="pool-warning">ALERT</div>
     <div class="main-pool-container">
       <div class="horizontal-abs-cams-left">
         <HorizontalCams />
