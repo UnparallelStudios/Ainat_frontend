@@ -18,6 +18,10 @@ export default {
     myResponseData() {
       return state.myResponseData;
     },
+
+    tempdata() {
+      return state.tempdata;
+    },
   },
 };
 </script>
@@ -40,7 +44,7 @@ export default {
     </div>
     <div class="cards-container">
       <Card />
-      <PoolCard />
+      <PoolCard :chlorine="tempdata" />
     </div>
   </div>
 </template>
