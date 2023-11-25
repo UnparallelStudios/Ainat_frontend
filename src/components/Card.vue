@@ -13,7 +13,7 @@ import "../assets/card.scss";
     </div>
     <div class="inner-card">
       <div class="rightside">
-        <p class="value">33 <span class="unit">pH</span></p>
+        <p class="value">7 <span class="unit">pH</span></p>
       </div>
       <div class="leftside">
         <p>looks good</p>
